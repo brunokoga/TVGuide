@@ -7,6 +7,7 @@
 //
 
 #import "TVGShowViewController.h"
+#import "TVGShowInfoServices.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface TVGShowViewController ()
@@ -27,6 +28,26 @@
     self.titleLabel.text = self.show.name;
     NSURL *imageURL = [NSURL URLWithString:self.show.imageURLString];
     [self.imageView setImageWithURL:imageURL];
+    [self fetchShowFromService];
+}
+
+
+- (void)fetchShowFromService
+{
+    [TVGShowInfoServices showInfoWithName:self.show.name
+                        completionHandler:^(NSArray *array) {
+                            // self.datasource.items = array;
+                            TVGShow *show = [array firstObject];
+                            self.show = show;
+                            [self refreshScreen];
+                            [self.tableView reloadData];
+                        }];
+}
+
+- (void)refreshScreen
+{
+    
+    
 }
 
 @end

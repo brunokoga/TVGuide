@@ -12,7 +12,7 @@
 
 - (instancetype)initWithTrendingDictionary:(NSDictionary *)dictionary
 {
-    self = [super init];
+    self = [self init];
     if (self) {
         self.name = dictionary[@"name"];
         self.position = dictionary[@"num"];

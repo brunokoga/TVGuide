@@ -16,4 +16,8 @@
 @property (strong) NSNumber *position;
 @property (strong) NSString *provider;
 
+@property (strong) NSString *info;
+@property (strong) NSArray *crew;
+@property (strong) NSArray *listings;
+
 @end

@@ -62,16 +62,15 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCel
     self.tableView.dataSource = self.datasource;
     self.tableView.delegate = self;
     
-    [self fetchCyclesFromService];
+    [self fetchShowsFromService];
 }
 
-- (void)fetchCyclesFromService
+- (void)fetchShowsFromService
 {
     [TVGTrendingShowsServices trendingShowsWithCompletionHandler:^(NSArray *array) {
         self.datasource.items = array;
         [self.tableView reloadData];
     }];
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
