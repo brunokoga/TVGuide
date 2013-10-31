@@ -73,7 +73,7 @@
 		D3BA20401822ABBE0079B027 /* TVGHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGHTTPRequestOperationManager.h; path = Classes/Connection/TVGHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		D3BA20411822ABBE0079B027 /* TVGHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGHTTPRequestOperationManager.m; path = Classes/Connection/TVGHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		D3BA20431822AD0C0079B027 /* APIURLs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIURLs.plist; sourceTree = "<group>"; };
-		D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = TVGuide/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D3BA20471822BD790079B027 /* TVGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGBaseViewController.h; path = "TVGuide/Classes/View Controllers/TVGBaseViewController.h"; sourceTree = "<group>"; };
 		D3BA20481822BD790079B027 /* TVGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGBaseViewController.m; path = "TVGuide/Classes/View Controllers/TVGBaseViewController.m"; sourceTree = "<group>"; };
 		D3BA204D1822BDA30079B027 /* TVGTrendingShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGTrendingShowsViewController.h; path = "TVGuide/Classes/View Controllers/TVGTrendingShowsViewController.h"; sourceTree = "<group>"; };
@@ -132,13 +132,6 @@
 		D3BA20011822854E0079B027 = {
 			isa = PBXGroup;
 			children = (
-				D3BA20751822D1080079B027 /* Table View Cells */,
-				D3BA20651822C1590079B027 /* Entities */,
-				D3BA205F1822C1240079B027 /* TVGTrendingShowsServices.h */,
-				D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */,
-				D3BA205D1822C0F10079B027 /* Helpers */,
-				D3BA205C1822C0E70079B027 /* View Controllers */,
-				D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */,
 				D3BA20131822854E0079B027 /* TVGuide */,
 				D3BA202C1822854E0079B027 /* TVGuideTests */,
 				D3BA200C1822854E0079B027 /* Frameworks */,
@@ -171,6 +164,11 @@
 		D3BA20131822854E0079B027 /* TVGuide */ = {
 			isa = PBXGroup;
 			children = (
+				D3BA20751822D1080079B027 /* Table View Cells */,
+				D3BA20651822C1590079B027 /* Entities */,
+				D3BA20791822D79C0079B027 /* Services */,
+				D3BA205D1822C0F10079B027 /* Helpers */,
+				D3BA205C1822C0E70079B027 /* View Controllers */,
 				D3BA203C18228B0C0079B027 /* Resources */,
 				D3BA20141822854E0079B027 /* Supporting Files */,
 				D3BA205E1822C1000079B027 /* Network */,
@@ -181,6 +179,7 @@
 		D3BA20141822854E0079B027 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */,
 				D3BA201F1822854E0079B027 /* Images.xcassets */,
 				D3BA201C1822854E0079B027 /* TVGAppDelegate.h */,
 				D3BA201D1822854E0079B027 /* TVGAppDelegate.m */,
@@ -248,6 +247,7 @@
 				D3BA20481822BD790079B027 /* TVGBaseViewController.m */,
 			);
 			name = "View Controllers";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D3BA205D1822C0F10079B027 /* Helpers */ = {
@@ -257,6 +257,7 @@
 				D3BA205A1822BFB40079B027 /* BKTableViewDatasource.m */,
 			);
 			name = Helpers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D3BA205E1822C1000079B027 /* Network */ = {
@@ -279,6 +280,7 @@
 				D3BA206A1822C3520079B027 /* TVGServices.m */,
 			);
 			name = Entities;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D3BA20751822D1080079B027 /* Table View Cells */ = {
@@ -288,6 +290,17 @@
 				D3BA206D1822C7840079B027 /* TVGTrendingShowsTableViewCell.m */,
 			);
 			name = "Table View Cells";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3BA20791822D79C0079B027 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA205F1822C1240079B027 /* TVGTrendingShowsServices.h */,
+				D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */,
+			);
+			name = Services;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
