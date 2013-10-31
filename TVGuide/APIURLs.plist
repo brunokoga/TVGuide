@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug</key>
+	<dict>
+		<key>showTrends</key>
+		<string>http://guilmo.com/tvguide/showtrends.php
+</string>
+		<key>searchShows</key>
+		<string>http://guilmo.com/tvguide/searchShows.php?url=</string>
+		<key>showInfo</key>
+		<string>http://guilmo.com/tvguide/getShowInfo.php?url=/m/shows/</string>
+		<key>fullSchedule</key>
+		<string>http://services.tvrage.com/feeds/fullschedule.php?country=</string>
+	</dict>
+	<key>Release</key>
+	<dict>
+		<key>showTrends</key>
+		<string>http://guilmo.com/tvguide/showtrends.php
+</string>
+		<key>searchShows</key>
+		<string>http://guilmo.com/tvguide/searchShows.php?url=</string>
+		<key>showInfo</key>
+		<string>http://guilmo.com/tvguide/getShowInfo.php?url=/m/shows/</string>
+		<key>fullSchedule</key>
+		<string>http://services.tvrage.com/feeds/fullschedule.php?country=</string>
+	</dict>
+</dict>
+</plist>
