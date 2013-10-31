@@ -12,6 +12,7 @@
 #import "TVGTrendingShowsTableViewCell.h"
 #import "TVGShow.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import "TVGShowViewController.h"
 
 @interface TVGTrendingShowsViewController () <UITableViewDelegate>
 
@@ -71,6 +72,22 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCel
         [self.tableView reloadData];
     }];
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowInfoSegue"])
+    {
+        TVGShowViewController *destination = segue.destinationViewController;
+        NSLog(@"%@", [(TVGShow *)self.datasource.items[self.selectedIndexPath.row] name]);
+        [destination setShow:(TVGShow *)self.datasource.items[self.selectedIndexPath.row]];
+    }
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedIndexPath = indexPath;
+    return indexPath;
 }
 
 

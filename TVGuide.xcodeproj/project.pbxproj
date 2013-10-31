@@ -139,11 +139,6 @@
 		D3BA20011822854E0079B027 = {
 			isa = PBXGroup;
 			children = (
-				D3BA207D1822D81D0079B027 /* TVGTheme.h */,
-				D3BA207E1822D82C0079B027 /* TVGBasicTheme.h */,
-				D3BA207F1822D82C0079B027 /* TVGBasicTheme.m */,
-				D3BA207A1822D8000079B027 /* BKThemeManager.h */,
-				D3BA207B1822D8000079B027 /* BKThemeManager.m */,
 				D3BA20131822854E0079B027 /* TVGuide */,
 				D3BA202C1822854E0079B027 /* TVGuideTests */,
 				D3BA200C1822854E0079B027 /* Frameworks */,
@@ -176,6 +171,7 @@
 		D3BA20131822854E0079B027 /* TVGuide */ = {
 			isa = PBXGroup;
 			children = (
+				D3BA20811822DC450079B027 /* Theme */,
 				D3BA20751822D1080079B027 /* Table View Cells */,
 				D3BA20651822C1590079B027 /* Entities */,
 				D3BA20791822D79C0079B027 /* Services */,
@@ -312,6 +308,19 @@
 				D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */,
 			);
 			name = Services;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D3BA20811822DC450079B027 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA207D1822D81D0079B027 /* TVGTheme.h */,
+				D3BA207E1822D82C0079B027 /* TVGBasicTheme.h */,
+				D3BA207F1822D82C0079B027 /* TVGBasicTheme.m */,
+				D3BA207A1822D8000079B027 /* BKThemeManager.h */,
+				D3BA207B1822D8000079B027 /* BKThemeManager.m */,
+			);
+			name = Theme;
 			path = ..;
 			sourceTree = "<group>";
 		};

@@ -7,7 +7,9 @@
 //
 
 #import "TVGBaseViewController.h"
+#import "TVGShow.h"
 
 @interface TVGShowViewController : TVGBaseViewController
+@property (strong) TVGShow *show;
 
 @end
