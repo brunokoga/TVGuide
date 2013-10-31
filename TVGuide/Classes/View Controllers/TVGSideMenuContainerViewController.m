@@ -14,15 +14,6 @@
 
 @implementation TVGSideMenuContainerViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,6 +24,11 @@ static NSString * const kTVGNagivationControllerIdentifier = @"TVGNagivationCont
 static NSString * const kTVGSideMenuViewControllerIdentifier = @"TVGSideMenuViewController";
 
 
+static NSString * const kTVGTrendingShowsViewControllerIdentifier = @"TVGTrendingShowsViewController";
+static NSString * const kTVGFullScheduleViewControllerIdentifier = @"TVGFullScheduleViewController";
+static NSString * const kTVGSearchForShowsViewControllerIdentifier = @"TVGSearchForShowsViewController";
+static NSString * const kTVGShowViewControllerIdentifier = @"TVGShowViewController";
+static NSString * const kTVGFavoritesViewControllerIdentifier = @"TVGFavoritesViewController";
 
 - (void)instantiateViewControllers
 {
@@ -43,4 +39,39 @@ static NSString * const kTVGSideMenuViewControllerIdentifier = @"TVGSideMenuView
     self.leftMenuViewController = leftViewController;
     self.leftMenuWidth = 139.0;
 }
+
+- (void)openViewControllerInCenterView:(TVGCenterViewController)viewController
+{
+    NSString *identifier;
+    switch (viewController) {
+        case TVGTrending:
+            identifier = kTVGTrendingShowsViewControllerIdentifier;
+            break;
+        case TVGSchedule:
+            identifier = kTVGFullScheduleViewControllerIdentifier;
+            break;
+        case TVGSearch:
+            identifier = kTVGSearchForShowsViewControllerIdentifier;
+            break;
+        case TVGShowInfo:
+            identifier = kTVGShowViewControllerIdentifier;
+            break;
+        case TVGFavorites:
+            identifier = kTVGFavoritesViewControllerIdentifier;
+            break;
+            
+        default:
+            break;
+    }
+    
+    if ([identifier length] > 0) {
+        UIViewController *rootViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
+        UINavigationController *navigationController = self.centerViewController;
+        [navigationController setViewControllers:@[rootViewController]];
+        [self toggleLeftSideMenuCompletion:^{
+            
+        }];
+    }
+}
+
 @end

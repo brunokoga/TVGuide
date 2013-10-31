@@ -1,19 +1,18 @@
 //
-//  TVGBaseViewController.m
+//  TVGFavoritesViewController.m
 //  TVGuide
 //
 //  Created by Bruno Koga on 10/31/13.
 //  Copyright (c) 2013 MobileAware. All rights reserved.
 //
 
-#import "TVGBaseViewController.h"
-#import <MFSideMenu/MFSideMenu.h>
+#import "TVGFavoritesViewController.h"
 
-@interface TVGBaseViewController ()
+@interface TVGFavoritesViewController ()
 
 @end
 
-@implementation TVGBaseViewController
+@implementation TVGFavoritesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,8 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)hamburgerButtonPressed:(id)sender {
-    [self.menuContainerViewController toggleLeftSideMenuCompletion:^{
-    }];
-}
 @end

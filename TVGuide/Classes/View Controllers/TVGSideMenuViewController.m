@@ -7,6 +7,8 @@
 //
 
 #import "TVGSideMenuViewController.h"
+#import <MFSideMenu/MFSideMenu.h>
+#import "TVGSideMenuContainerViewController.h"
 
 @interface TVGSideMenuViewController ()
 
@@ -19,5 +21,20 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)trendingShowsButtonPressed:(id)sender {
+    [(TVGSideMenuContainerViewController *)self.menuContainerViewController openViewControllerInCenterView:TVGTrending];
+}
 
+
+- (IBAction)fullScheduleButtonPressed:(id)sender {
+    [(TVGSideMenuContainerViewController *)self.menuContainerViewController openViewControllerInCenterView:TVGSchedule];
+}
+
+- (IBAction)searchForShowsButtonPressed:(id)sender {
+    [(TVGSideMenuContainerViewController *)self.menuContainerViewController openViewControllerInCenterView:TVGSearch];
+}
+
+- (IBAction)myFavoritesButtonPressed:(id)sender {
+    [(TVGSideMenuContainerViewController *)self.menuContainerViewController openViewControllerInCenterView:TVGFavorites];
+}
 @end

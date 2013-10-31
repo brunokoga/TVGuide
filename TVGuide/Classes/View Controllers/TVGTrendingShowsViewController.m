@@ -12,7 +12,6 @@
 #import "TVGTrendingShowsTableViewCell.h"
 #import "TVGShow.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
-#import <MFSideMenu/MFSideMenu.h>
 
 @interface TVGTrendingShowsViewController () <UITableViewDelegate>
 
@@ -73,10 +72,5 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCel
     
 }
 
-- (IBAction)hamburgerButtonPressed:(id)sender {
-    [self.menuContainerViewController toggleLeftSideMenuCompletion:^{
-        
-    }];
-}
 
 @end

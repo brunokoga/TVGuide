@@ -8,6 +8,16 @@
 
 #import "MFSideMenuContainerViewController.h"
 
+typedef enum TVGCenterViewController {
+    TVGTrending,
+    TVGSearch,
+    TVGSchedule,
+    TVGShowInfo,
+    TVGFavorites
+} TVGCenterViewController;
+
 @interface TVGSideMenuContainerViewController : MFSideMenuContainerViewController
+
+- (void)openViewControllerInCenterView:(TVGCenterViewController)viewController;
 
 @end
