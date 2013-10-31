@@ -1,0 +1,6 @@
+http://guilmo.com/tvguide/searchShows.php?url=game%20of%20thrones
+
+Searches for a show
+Return: JSON
+Parameters: url=[SEARCH_TERM]
+Error/Not Found: Empty Json

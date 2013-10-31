@@ -1,1 +1,0 @@
-http://services.tvrage.com/feeds/fullschedule.php?country=US

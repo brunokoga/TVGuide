@@ -1,0 +1,14 @@
+http://guilmo.com/tvguide/getShowInfo.php?url=/m/shows/criminal­minds
+
+Returns the info for a given show
+Parameters:url=/m/shows/[SHOW_NAME]
+Format: JSON
+Error/Not Found: JSON with 1 result: 
+{
+"air": null,
+"crew": [],
+"img": null,
+"info": "",
+"listings": [],
+"name": ""
+}

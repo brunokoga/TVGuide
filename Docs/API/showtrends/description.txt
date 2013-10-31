@@ -1,0 +1,5 @@
+http://guilmo.com/tvguide/showtrends.php
+
+Returns the Show Trends
+Format: JSON
+Parameters: none

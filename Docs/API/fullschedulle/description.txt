@@ -1,0 +1,5 @@
+http://services.tvrage.com/feeds/fullschedule.php?country=US
+
+Returns the Full Schedule for a given country.
+Return Type: XML
+Parameters: country=[COUNTRY_INITIALS]
