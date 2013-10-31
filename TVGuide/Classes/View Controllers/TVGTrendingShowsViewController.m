@@ -52,6 +52,7 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCel
         cell.showProviderLabel.text = show.provider;
         NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
         [cell.showImageView setImageWithURL:imageURL];
+        [cell configureForTrending];
     };
 
     self.datasource = [[BKTableViewDatasource alloc] initWithCellIdentifier:kTVGTrendingShowsCellIdentifier

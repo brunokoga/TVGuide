@@ -38,6 +38,8 @@
 		D3BA20711822CDA40079B027 /* TVGSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20701822CDA40079B027 /* TVGSideMenuContainerViewController.m */; };
 		D3BA20741822CE420079B027 /* TVGSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20731822CE420079B027 /* TVGSideMenuViewController.m */; };
 		D3BA20781822D52D0079B027 /* TVGFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20771822D52D0079B027 /* TVGFavoritesViewController.m */; };
+		D3BA207C1822D8000079B027 /* BKThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA207B1822D8000079B027 /* BKThemeManager.m */; };
+		D3BA20801822D82C0079B027 /* TVGBasicTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA207F1822D82C0079B027 /* TVGBasicTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,11 @@
 		D3BA20731822CE420079B027 /* TVGSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSideMenuViewController.m; path = "TVGuide/Classes/View Controllers/TVGSideMenuViewController.m"; sourceTree = "<group>"; };
 		D3BA20761822D52D0079B027 /* TVGFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGFavoritesViewController.h; path = "TVGuide/Classes/View Controllers/TVGFavoritesViewController.h"; sourceTree = "<group>"; };
 		D3BA20771822D52D0079B027 /* TVGFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGFavoritesViewController.m; path = "TVGuide/Classes/View Controllers/TVGFavoritesViewController.m"; sourceTree = "<group>"; };
+		D3BA207A1822D8000079B027 /* BKThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKThemeManager.h; path = TVGuide/Classes/Theme/BKThemeManager.h; sourceTree = "<group>"; };
+		D3BA207B1822D8000079B027 /* BKThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKThemeManager.m; path = TVGuide/Classes/Theme/BKThemeManager.m; sourceTree = "<group>"; };
+		D3BA207D1822D81D0079B027 /* TVGTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TVGTheme.h; path = TVGuide/Classes/Theme/TVGTheme.h; sourceTree = "<group>"; };
+		D3BA207E1822D82C0079B027 /* TVGBasicTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGBasicTheme.h; path = TVGuide/Classes/Theme/TVGBasicTheme.h; sourceTree = "<group>"; };
+		D3BA207F1822D82C0079B027 /* TVGBasicTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGBasicTheme.m; path = TVGuide/Classes/Theme/TVGBasicTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +139,11 @@
 		D3BA20011822854E0079B027 = {
 			isa = PBXGroup;
 			children = (
+				D3BA207D1822D81D0079B027 /* TVGTheme.h */,
+				D3BA207E1822D82C0079B027 /* TVGBasicTheme.h */,
+				D3BA207F1822D82C0079B027 /* TVGBasicTheme.m */,
+				D3BA207A1822D8000079B027 /* BKThemeManager.h */,
+				D3BA207B1822D8000079B027 /* BKThemeManager.m */,
 				D3BA20131822854E0079B027 /* TVGuide */,
 				D3BA202C1822854E0079B027 /* TVGuideTests */,
 				D3BA200C1822854E0079B027 /* Frameworks */,
@@ -437,8 +449,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BA20801822D82C0079B027 /* TVGBasicTheme.m in Sources */,
 				D3BA20741822CE420079B027 /* TVGSideMenuViewController.m in Sources */,
 				D3BA20521822BDB80079B027 /* TVGFullScheduleViewController.m in Sources */,
+				D3BA207C1822D8000079B027 /* BKThemeManager.m in Sources */,
 				D3BA206E1822C7840079B027 /* TVGTrendingShowsTableViewCell.m in Sources */,
 				D3BA20421822ABBE0079B027 /* TVGHTTPRequestOperationManager.m in Sources */,
 				D3BA20491822BD790079B027 /* TVGBaseViewController.m in Sources */,

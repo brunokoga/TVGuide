@@ -13,4 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *showProviderLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *showImageView;
 
+- (void)configureForTrending;
+- (void)configureForSearch;
+
 @end

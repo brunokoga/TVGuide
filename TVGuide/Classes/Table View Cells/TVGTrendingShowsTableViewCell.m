@@ -7,6 +7,7 @@
 //
 
 #import "TVGTrendingShowsTableViewCell.h"
+#import "BKThemeManager.h"
 
 @implementation TVGTrendingShowsTableViewCell
 
@@ -14,9 +15,22 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+        [self setUp];
     }
     return self;
+}
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    [self setUp];
+}
+
+- (void)setUp
+{
+    id<TVGTheme> theme = [BKThemeManager theme];
+    self.showNameLabel.font = [theme fontWithSize:self.showNameLabel.font.pointSize];
+    self.showProviderLabel.font = [theme fontWithSize:self.showProviderLabel.font.pointSize];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -25,5 +39,22 @@
 
     // Configure the view for the selected state
 }
+
+
+- (void)configureForTrending
+{
+    id<TVGTheme> theme = [BKThemeManager theme];
+    self.showNameLabel.textColor = [theme color1];
+    self.showProviderLabel.textColor = [theme color2];
+}
+
+- (void)configureForSearch
+{
+    id<TVGTheme> theme = [BKThemeManager theme];
+    self.showNameLabel.textColor = [theme color4];
+    self.showProviderLabel.textColor = [theme color3];
+    
+}
+
 
 @end
