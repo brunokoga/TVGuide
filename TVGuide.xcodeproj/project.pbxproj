@@ -19,6 +19,7 @@
 		D3BA20291822854E0079B027 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BA20111822854E0079B027 /* UIKit.framework */; };
 		D3BA20311822854E0079B027 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3BA202F1822854E0079B027 /* InfoPlist.strings */; };
 		D3BA20331822854E0079B027 /* TVGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20321822854E0079B027 /* TVGuideTests.m */; };
+		D3BA203F18228B0C0079B027 /* PunkRockShow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BA203E18228B0C0079B027 /* PunkRockShow.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D3BA202E1822854E0079B027 /* TVGuideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TVGuideTests-Info.plist"; sourceTree = "<group>"; };
 		D3BA20301822854E0079B027 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3BA20321822854E0079B027 /* TVGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVGuideTests.m; sourceTree = "<group>"; };
+		D3BA203E18228B0C0079B027 /* PunkRockShow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PunkRockShow.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,7 @@
 		D3BA20131822854E0079B027 /* TVGuide */ = {
 			isa = PBXGroup;
 			children = (
-				D3BA201C1822854E0079B027 /* TVGAppDelegate.h */,
-				D3BA201D1822854E0079B027 /* TVGAppDelegate.m */,
-				D3BA201F1822854E0079B027 /* Images.xcassets */,
+				D3BA203C18228B0C0079B027 /* Resources */,
 				D3BA20141822854E0079B027 /* Supporting Files */,
 			);
 			path = TVGuide;
@@ -118,6 +118,9 @@
 		D3BA20141822854E0079B027 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3BA201F1822854E0079B027 /* Images.xcassets */,
+				D3BA201C1822854E0079B027 /* TVGAppDelegate.h */,
+				D3BA201D1822854E0079B027 /* TVGAppDelegate.m */,
 				D3BA20151822854E0079B027 /* TVGuide-Info.plist */,
 				D3BA20161822854E0079B027 /* InfoPlist.strings */,
 				D3BA20191822854E0079B027 /* main.m */,
@@ -142,6 +145,22 @@
 				D3BA202F1822854E0079B027 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3BA203C18228B0C0079B027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA203D18228B0C0079B027 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D3BA203D18228B0C0079B027 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA203E18228B0C0079B027 /* PunkRockShow.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BA203F18228B0C0079B027 /* PunkRockShow.ttf in Resources */,
 				D3BA20181822854E0079B027 /* InfoPlist.strings in Resources */,
 				D3BA20201822854E0079B027 /* Images.xcassets in Resources */,
 			);
@@ -442,6 +462,7 @@
 				D3BA20381822854E0079B027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3BA20391822854E0079B027 /* Build configuration list for PBXNativeTarget "TVGuideTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +471,7 @@
 				D3BA203B1822854E0079B027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
