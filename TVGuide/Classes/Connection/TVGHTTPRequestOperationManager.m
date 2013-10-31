@@ -21,7 +21,7 @@
     static dispatch_once_t once;
     static id sharedInstance;
     dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
+        sharedInstance = [[self alloc] initWithBaseURL:nil];
         [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
         [sharedInstance instantiateURLs];
     });

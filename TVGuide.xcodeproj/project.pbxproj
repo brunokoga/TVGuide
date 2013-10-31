@@ -23,6 +23,20 @@
 		D3BA203F18228B0C0079B027 /* PunkRockShow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3BA203E18228B0C0079B027 /* PunkRockShow.ttf */; };
 		D3BA20421822ABBE0079B027 /* TVGHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20411822ABBE0079B027 /* TVGHTTPRequestOperationManager.m */; };
 		D3BA20441822AD0C0079B027 /* APIURLs.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3BA20431822AD0C0079B027 /* APIURLs.plist */; };
+		D3BA20461822BD260079B027 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */; };
+		D3BA20491822BD790079B027 /* TVGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20481822BD790079B027 /* TVGBaseViewController.m */; };
+		D3BA204F1822BDA30079B027 /* TVGTrendingShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA204E1822BDA30079B027 /* TVGTrendingShowsViewController.m */; };
+		D3BA20521822BDB80079B027 /* TVGFullScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20511822BDB80079B027 /* TVGFullScheduleViewController.m */; };
+		D3BA20551822BDCA0079B027 /* TVGSearchForShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20541822BDCA0079B027 /* TVGSearchForShowsViewController.m */; };
+		D3BA20581822BDE30079B027 /* TVGShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20571822BDE30079B027 /* TVGShowViewController.m */; };
+		D3BA205B1822BFB40079B027 /* BKTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA205A1822BFB40079B027 /* BKTableViewDatasource.m */; };
+		D3BA20611822C1240079B027 /* TVGTrendingShowsServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */; };
+		D3BA20641822C1550079B027 /* TVGShow.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20631822C1550079B027 /* TVGShow.m */; };
+		D3BA20681822C24E0079B027 /* TVGShow+Trending.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20671822C24E0079B027 /* TVGShow+Trending.m */; };
+		D3BA206B1822C3520079B027 /* TVGServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA206A1822C3520079B027 /* TVGServices.m */; };
+		D3BA206E1822C7840079B027 /* TVGTrendingShowsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA206D1822C7840079B027 /* TVGTrendingShowsTableViewCell.m */; };
+		D3BA20711822CDA40079B027 /* TVGSideMenuContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20701822CDA40079B027 /* TVGSideMenuContainerViewController.m */; };
+		D3BA20741822CE420079B027 /* TVGSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20731822CE420079B027 /* TVGSideMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +72,33 @@
 		D3BA20401822ABBE0079B027 /* TVGHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGHTTPRequestOperationManager.h; path = Classes/Connection/TVGHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		D3BA20411822ABBE0079B027 /* TVGHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGHTTPRequestOperationManager.m; path = Classes/Connection/TVGHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		D3BA20431822AD0C0079B027 /* APIURLs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIURLs.plist; sourceTree = "<group>"; };
+		D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = TVGuide/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		D3BA20471822BD790079B027 /* TVGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGBaseViewController.h; path = "TVGuide/Classes/View Controllers/TVGBaseViewController.h"; sourceTree = "<group>"; };
+		D3BA20481822BD790079B027 /* TVGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGBaseViewController.m; path = "TVGuide/Classes/View Controllers/TVGBaseViewController.m"; sourceTree = "<group>"; };
+		D3BA204D1822BDA30079B027 /* TVGTrendingShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGTrendingShowsViewController.h; path = "TVGuide/Classes/View Controllers/TVGTrendingShowsViewController.h"; sourceTree = "<group>"; };
+		D3BA204E1822BDA30079B027 /* TVGTrendingShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGTrendingShowsViewController.m; path = "TVGuide/Classes/View Controllers/TVGTrendingShowsViewController.m"; sourceTree = "<group>"; };
+		D3BA20501822BDB80079B027 /* TVGFullScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGFullScheduleViewController.h; path = "TVGuide/Classes/View Controllers/TVGFullScheduleViewController.h"; sourceTree = "<group>"; };
+		D3BA20511822BDB80079B027 /* TVGFullScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGFullScheduleViewController.m; path = "TVGuide/Classes/View Controllers/TVGFullScheduleViewController.m"; sourceTree = "<group>"; };
+		D3BA20531822BDCA0079B027 /* TVGSearchForShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGSearchForShowsViewController.h; path = "TVGuide/Classes/View Controllers/TVGSearchForShowsViewController.h"; sourceTree = "<group>"; };
+		D3BA20541822BDCA0079B027 /* TVGSearchForShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSearchForShowsViewController.m; path = "TVGuide/Classes/View Controllers/TVGSearchForShowsViewController.m"; sourceTree = "<group>"; };
+		D3BA20561822BDE30079B027 /* TVGShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGShowViewController.h; path = "TVGuide/Classes/View Controllers/TVGShowViewController.h"; sourceTree = "<group>"; };
+		D3BA20571822BDE30079B027 /* TVGShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGShowViewController.m; path = "TVGuide/Classes/View Controllers/TVGShowViewController.m"; sourceTree = "<group>"; };
+		D3BA20591822BFB40079B027 /* BKTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKTableViewDatasource.h; path = TVGuide/Classes/BKTableViewDatasource.h; sourceTree = "<group>"; };
+		D3BA205A1822BFB40079B027 /* BKTableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKTableViewDatasource.m; path = TVGuide/Classes/BKTableViewDatasource.m; sourceTree = "<group>"; };
+		D3BA205F1822C1240079B027 /* TVGTrendingShowsServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGTrendingShowsServices.h; path = TVGuide/Classes/Services/TVGTrendingShowsServices.h; sourceTree = "<group>"; };
+		D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGTrendingShowsServices.m; path = TVGuide/Classes/Services/TVGTrendingShowsServices.m; sourceTree = "<group>"; };
+		D3BA20621822C1550079B027 /* TVGShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGShow.h; path = TVGuide/Classes/Entities/TVGShow.h; sourceTree = "<group>"; };
+		D3BA20631822C1550079B027 /* TVGShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGShow.m; path = TVGuide/Classes/Entities/TVGShow.m; sourceTree = "<group>"; };
+		D3BA20661822C24E0079B027 /* TVGShow+Trending.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TVGShow+Trending.h"; path = "TVGuide/Classes/Entities/TVGShow+Trending.h"; sourceTree = "<group>"; };
+		D3BA20671822C24E0079B027 /* TVGShow+Trending.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TVGShow+Trending.m"; path = "TVGuide/Classes/Entities/TVGShow+Trending.m"; sourceTree = "<group>"; };
+		D3BA20691822C3520079B027 /* TVGServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGServices.h; path = TVGuide/Classes/Services/TVGServices.h; sourceTree = "<group>"; };
+		D3BA206A1822C3520079B027 /* TVGServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGServices.m; path = TVGuide/Classes/Services/TVGServices.m; sourceTree = "<group>"; };
+		D3BA206C1822C7840079B027 /* TVGTrendingShowsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGTrendingShowsTableViewCell.h; path = "TVGuide/Classes/Table View Cells/TVGTrendingShowsTableViewCell.h"; sourceTree = "<group>"; };
+		D3BA206D1822C7840079B027 /* TVGTrendingShowsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGTrendingShowsTableViewCell.m; path = "TVGuide/Classes/Table View Cells/TVGTrendingShowsTableViewCell.m"; sourceTree = "<group>"; };
+		D3BA206F1822CDA40079B027 /* TVGSideMenuContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGSideMenuContainerViewController.h; path = "TVGuide/Classes/View Controllers/TVGSideMenuContainerViewController.h"; sourceTree = "<group>"; };
+		D3BA20701822CDA40079B027 /* TVGSideMenuContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSideMenuContainerViewController.m; path = "TVGuide/Classes/View Controllers/TVGSideMenuContainerViewController.m"; sourceTree = "<group>"; };
+		D3BA20721822CE420079B027 /* TVGSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGSideMenuViewController.h; path = "TVGuide/Classes/View Controllers/TVGSideMenuViewController.h"; sourceTree = "<group>"; };
+		D3BA20731822CE420079B027 /* TVGSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSideMenuViewController.m; path = "TVGuide/Classes/View Controllers/TVGSideMenuViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +129,18 @@
 		D3BA20011822854E0079B027 = {
 			isa = PBXGroup;
 			children = (
+				D3BA20721822CE420079B027 /* TVGSideMenuViewController.h */,
+				D3BA20731822CE420079B027 /* TVGSideMenuViewController.m */,
+				D3BA206F1822CDA40079B027 /* TVGSideMenuContainerViewController.h */,
+				D3BA20701822CDA40079B027 /* TVGSideMenuContainerViewController.m */,
+				D3BA206C1822C7840079B027 /* TVGTrendingShowsTableViewCell.h */,
+				D3BA206D1822C7840079B027 /* TVGTrendingShowsTableViewCell.m */,
+				D3BA20651822C1590079B027 /* Entities */,
+				D3BA205F1822C1240079B027 /* TVGTrendingShowsServices.h */,
+				D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */,
+				D3BA205D1822C0F10079B027 /* Helpers */,
+				D3BA205C1822C0E70079B027 /* View Controllers */,
+				D3BA20451822BD260079B027 /* MainStoryboard_iPhone.storyboard */,
 				D3BA20131822854E0079B027 /* TVGuide */,
 				D3BA202C1822854E0079B027 /* TVGuideTests */,
 				D3BA200C1822854E0079B027 /* Frameworks */,
@@ -122,8 +175,7 @@
 			children = (
 				D3BA203C18228B0C0079B027 /* Resources */,
 				D3BA20141822854E0079B027 /* Supporting Files */,
-				D3BA20401822ABBE0079B027 /* TVGHTTPRequestOperationManager.h */,
-				D3BA20411822ABBE0079B027 /* TVGHTTPRequestOperationManager.m */,
+				D3BA205E1822C1000079B027 /* Network */,
 			);
 			path = TVGuide;
 			sourceTree = "<group>";
@@ -175,6 +227,54 @@
 				D3BA203E18228B0C0079B027 /* PunkRockShow.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D3BA205C1822C0E70079B027 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA20561822BDE30079B027 /* TVGShowViewController.h */,
+				D3BA20571822BDE30079B027 /* TVGShowViewController.m */,
+				D3BA20531822BDCA0079B027 /* TVGSearchForShowsViewController.h */,
+				D3BA20541822BDCA0079B027 /* TVGSearchForShowsViewController.m */,
+				D3BA20501822BDB80079B027 /* TVGFullScheduleViewController.h */,
+				D3BA20511822BDB80079B027 /* TVGFullScheduleViewController.m */,
+				D3BA204D1822BDA30079B027 /* TVGTrendingShowsViewController.h */,
+				D3BA204E1822BDA30079B027 /* TVGTrendingShowsViewController.m */,
+				D3BA20471822BD790079B027 /* TVGBaseViewController.h */,
+				D3BA20481822BD790079B027 /* TVGBaseViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D3BA205D1822C0F10079B027 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA20591822BFB40079B027 /* BKTableViewDatasource.h */,
+				D3BA205A1822BFB40079B027 /* BKTableViewDatasource.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D3BA205E1822C1000079B027 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA20401822ABBE0079B027 /* TVGHTTPRequestOperationManager.h */,
+				D3BA20411822ABBE0079B027 /* TVGHTTPRequestOperationManager.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D3BA20651822C1590079B027 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D3BA20621822C1550079B027 /* TVGShow.h */,
+				D3BA20631822C1550079B027 /* TVGShow.m */,
+				D3BA20661822C24E0079B027 /* TVGShow+Trending.h */,
+				D3BA20671822C24E0079B027 /* TVGShow+Trending.m */,
+				D3BA20691822C3520079B027 /* TVGServices.h */,
+				D3BA206A1822C3520079B027 /* TVGServices.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BA20461822BD260079B027 /* MainStoryboard_iPhone.storyboard in Resources */,
 				D3BA203F18228B0C0079B027 /* PunkRockShow.ttf in Resources */,
 				D3BA20181822854E0079B027 /* InfoPlist.strings in Resources */,
 				D3BA20201822854E0079B027 /* Images.xcassets in Resources */,
@@ -310,9 +411,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BA20741822CE420079B027 /* TVGSideMenuViewController.m in Sources */,
+				D3BA20521822BDB80079B027 /* TVGFullScheduleViewController.m in Sources */,
+				D3BA206E1822C7840079B027 /* TVGTrendingShowsTableViewCell.m in Sources */,
 				D3BA20421822ABBE0079B027 /* TVGHTTPRequestOperationManager.m in Sources */,
+				D3BA20491822BD790079B027 /* TVGBaseViewController.m in Sources */,
+				D3BA20581822BDE30079B027 /* TVGShowViewController.m in Sources */,
+				D3BA20641822C1550079B027 /* TVGShow.m in Sources */,
 				D3BA201E1822854E0079B027 /* TVGAppDelegate.m in Sources */,
+				D3BA20611822C1240079B027 /* TVGTrendingShowsServices.m in Sources */,
+				D3BA205B1822BFB40079B027 /* BKTableViewDatasource.m in Sources */,
 				D3BA201A1822854E0079B027 /* main.m in Sources */,
+				D3BA20681822C24E0079B027 /* TVGShow+Trending.m in Sources */,
+				D3BA20711822CDA40079B027 /* TVGSideMenuContainerViewController.m in Sources */,
+				D3BA206B1822C3520079B027 /* TVGServices.m in Sources */,
+				D3BA20551822BDCA0079B027 /* TVGSearchForShowsViewController.m in Sources */,
+				D3BA204F1822BDA30079B027 /* TVGTrendingShowsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

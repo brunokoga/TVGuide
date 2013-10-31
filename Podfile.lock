@@ -19,12 +19,15 @@ PODS:
   - AFNetworking/Serialization (2.0.2)
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
+  - MFSideMenu (0.5.4)
 
 DEPENDENCIES:
   - AFNetworking
   - AFNetworking/UIKit
+  - MFSideMenu
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
+  MFSideMenu: f59e25c080097a701e108459c207fb22e1f62c30
 
 COCOAPODS: 0.27.1
