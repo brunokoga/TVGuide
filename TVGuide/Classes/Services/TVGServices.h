@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "TVGHTTPRequestOperationManager.h"
 
+/**
+ *  Abstract Class that declares
+ *  the common functionalities from 
+ *  a service class.
+ */
+
 typedef void (^TVGServiceArrayResponse)(NSArray *array);
 
 @interface TVGServices : NSObject

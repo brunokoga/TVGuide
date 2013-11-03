@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "TVGTheme.h"
+/**
+ *  This class is responsible for returning the
+ *  correct instantiated theme.
+ */
 
 @interface BKThemeManager : NSObject
 

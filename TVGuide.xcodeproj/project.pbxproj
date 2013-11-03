@@ -296,8 +296,6 @@
 				D3BA20631822C1550079B027 /* TVGShow.m */,
 				D3BA20661822C24E0079B027 /* TVGShow+Trending.h */,
 				D3BA20671822C24E0079B027 /* TVGShow+Trending.m */,
-				D3BA20691822C3520079B027 /* TVGServices.h */,
-				D3BA206A1822C3520079B027 /* TVGServices.m */,
 				D3BA208B1822E2CE0079B027 /* TVGShow+Info.h */,
 				D3BA208C1822E2CE0079B027 /* TVGShow+Info.m */,
 			);
@@ -318,6 +316,8 @@
 		D3BA20791822D79C0079B027 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D3BA20691822C3520079B027 /* TVGServices.h */,
+				D3BA206A1822C3520079B027 /* TVGServices.m */,
 				D3BA205F1822C1240079B027 /* TVGTrendingShowsServices.h */,
 				D3BA20601822C1240079B027 /* TVGTrendingShowsServices.m */,
 				D3BA20821822E1430079B027 /* TVGShowInfoServices.h */,

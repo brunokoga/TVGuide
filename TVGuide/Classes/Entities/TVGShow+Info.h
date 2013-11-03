@@ -7,6 +7,10 @@
 //
 
 #import "TVGShow.h"
+/**
+ *  Category that allows creating a TVGShow
+ *  from a NSDictionary (returned from the API)
+ */
 
 @interface TVGShow (Info)
 

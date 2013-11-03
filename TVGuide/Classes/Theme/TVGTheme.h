@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+/**
+ *  Protocol that defines the methods that
+ *  a Theme should implement.
+ */
 
 @protocol TVGTheme <NSObject>
 

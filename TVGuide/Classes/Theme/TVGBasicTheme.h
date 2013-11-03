@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "TVGTheme.h"
 
+/**
+ *  Class that follows the TVGTheme protocol,
+ *  defining the basic theme for the app
+ */
+
 @interface TVGBasicTheme : NSObject <TVGTheme>
 
 @end
