@@ -10,4 +10,22 @@
 
 @implementation TVGSearchServices
 
++ (void)searchWithSearchTerm:(NSString *)searchTerm
+           completionHandler:(TVGServiceArrayResponse)completion
+{
+    TVGHTTPRequestOperationManager *manager = [TVGHTTPRequestOperationManager sharedManager];
+    [manager searchShowsWithSearchTerm:searchTerm
+                  completion:^(NSError *error, id responseObject) {
+                      if (error == nil)
+                      {
+                          NSArray *responseArray = responseObject;
+                          completion(responseArray);
+                      }
+                      else
+                      {
+                          //TODO: Error handling
+                          completion(nil);
+                      }
+                  }];
+}
 @end

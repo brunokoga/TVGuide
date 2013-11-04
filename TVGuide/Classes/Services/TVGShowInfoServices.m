@@ -19,14 +19,9 @@
                   completion:^(NSError *error, id responseObject) {
                       if (error == nil)
                       {
-                          NSMutableArray *shows = [NSMutableArray new];
-                          NSArray *responseArray = responseObject;
-                          for (NSDictionary *dictionary in responseArray)
-                          {
-                              TVGShow *show = [[TVGShow alloc] initWithShowInfoDictionary:dictionary];
-                              [shows addObject:show];
-                          }
-                          completion([shows copy]);
+                          NSDictionary *responseDictionary = responseObject;
+                          TVGShow *show = [[TVGShow alloc] initWithShowInfoDictionary:responseDictionary];
+                          completion(@[show]);
                       }
                       else
                       {

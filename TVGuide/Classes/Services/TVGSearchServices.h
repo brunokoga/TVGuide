@@ -10,4 +10,6 @@
 
 @interface TVGSearchServices : TVGServices
 
++ (void)searchWithSearchTerm:(NSString *)searchTerm
+           completionHandler:(TVGServiceArrayResponse)completion;
 @end

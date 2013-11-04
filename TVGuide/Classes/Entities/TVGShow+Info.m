@@ -14,6 +14,10 @@
 {
     self = [self init];
     if (self) {
+        self.info = dictionary[@"info"];
+        self.listings = dictionary[@"listings"];
+        self.crew = dictionary[@"crew"];
+        
     }
     return self;
     

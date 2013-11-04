@@ -53,7 +53,8 @@ static NSString * const kAPIShowTrends = @"showTrends";
                             completion:(TVGRequestCompletionHandler)completion
 {
     NSString *urlString = self.urls[kAPIFullSchedule];
-    [urlString stringByAppendingString:countryInitials];
+    urlString = [urlString stringByAppendingString:countryInitials];
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [self GET:urlString
    parameters:nil
@@ -68,7 +69,8 @@ static NSString * const kAPIShowTrends = @"showTrends";
              completion:(TVGRequestCompletionHandler)completion
 {
     NSString *urlString = self.urls[kAPIShowInfo];
-    [urlString stringByAppendingString:show];
+    urlString = [urlString stringByAppendingString:show];
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [self GET:urlString
    parameters:nil
@@ -83,7 +85,8 @@ static NSString * const kAPIShowTrends = @"showTrends";
                        completion:(TVGRequestCompletionHandler)completion
 {
     NSString *urlString = self.urls[kAPISearchShows];
-    [urlString stringByAppendingString:searchTerm];
+    urlString = [urlString stringByAppendingString:searchTerm];
+    urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [self GET:urlString
    parameters:nil

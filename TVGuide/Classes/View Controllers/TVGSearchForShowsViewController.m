@@ -7,8 +7,10 @@
 //
 
 #import "TVGSearchForShowsViewController.h"
+#import "TVGSearchServices.h"
 
-@interface TVGSearchForShowsViewController ()
+@interface TVGSearchForShowsViewController () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 
 @end
 
@@ -35,4 +37,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self searchForTerm:textField.text];
+    return YES;
+}
+
+- (void)searchForTerm:(NSString *)term
+{
+       [TVGSearchServices searchWithSearchTerm:term
+                             completionHandler:^(NSArray *array) {
+                                 NSLog(@"%@", array);
+                             }];
+}
 @end

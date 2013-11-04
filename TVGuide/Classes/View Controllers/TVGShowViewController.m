@@ -38,7 +38,9 @@
                         completionHandler:^(NSArray *array) {
                             // self.datasource.items = array;
                             TVGShow *show = [array firstObject];
-                            self.show = show;
+                            self.show.info = show.info;
+                            self.show.listings = show.listings;
+                            self.show.crew = show.crew;
                             [self refreshScreen];
                             [self.tableView reloadData];
                         }];
@@ -46,6 +48,7 @@
 
 - (void)refreshScreen
 {
+    self.descriptionTextView.text = self.show.info;
     
     
 }
