@@ -14,6 +14,7 @@
 
 @protocol TVGTheme <NSObject>
 
+- (void)setupTheme;
 - (UIFont *)fontWithSize:(CGFloat)pointSize;
 - (UIColor *)color1; //red
 - (UIColor *)color2; //blue

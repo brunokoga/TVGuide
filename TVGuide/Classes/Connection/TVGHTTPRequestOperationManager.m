@@ -69,7 +69,8 @@ static NSString * const kAPIShowTrends = @"showTrends";
              completion:(TVGRequestCompletionHandler)completion
 {
     NSString *urlString = self.urls[kAPIShowInfo];
-    urlString = [urlString stringByAppendingString:show];
+    NSString *formattedShow = [show stringByReplacingOccurrencesOfString:@" " withString:@"-"];
+    urlString = [urlString stringByAppendingString:formattedShow];
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
     [self GET:urlString

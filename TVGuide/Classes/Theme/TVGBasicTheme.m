@@ -12,6 +12,14 @@
 
 static NSString * const kBasicThemeFontName = @"PunkRockShow";
 
+- (void)setupTheme
+{
+    UIColor *whiteColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setTintColor:whiteColor];
+    [[UIBarButtonItem appearance] setTintColor:whiteColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : whiteColor,
+                                                           NSFontAttributeName : [self fontWithSize:22.0]}];
+}
 
 - (UIFont *)fontWithSize:(CGFloat)pointSize
 {

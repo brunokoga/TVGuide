@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--Trending Shows View Controller-->
+        <!--Trending Shows View Controller - TRENDING SHOWS-->
         <scene sceneID="iLU-J2-2AU">
             <objects>
                 <viewController storyboardIdentifier="TVGTrendingShowsViewController" id="URo-Kv-8Sx" customClass="TVGTrendingShowsViewController" sceneMemberID="viewController">
@@ -21,11 +21,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kTVGTrendingShowsCellIdentifier" id="5gm-j6-lL9" customClass="TVGTrendingShowsTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kTVGTrendingShowsCellIdentifier" id="5gm-j6-lL9" customClass="TVGTrendingShowsTableViewCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5gm-j6-lL9" id="unC-ly-9ed">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="accArrowOrange" translatesAutoresizingMaskIntoConstraints="NO" id="7wS-ec-eJB">
@@ -63,7 +63,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g43-Nw-Tga">
+                    <navigationItem key="navigationItem" title="TRENDING SHOWS" id="g43-Nw-Tga">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon" id="Akf-ja-NXm">
                             <connections>
                                 <action selector="hamburgerButtonPressed:" destination="URo-Kv-8Sx" id="cbk-ZT-jbV"/>
@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="514" y="168"/>
         </scene>
-        <!--Search For Shows View Controller-->
+        <!--Search For Shows View Controller - SEARCH-->
         <scene sceneID="iUg-sA-EiC">
             <objects>
                 <viewController storyboardIdentifier="TVGSearchForShowsViewController" id="DrL-Eg-xUF" customClass="TVGSearchForShowsViewController" sceneMemberID="viewController">
@@ -102,7 +102,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.72549021244049072" green="0.83529418706893921" blue="0.32549020648002625" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tsd-4K-I8u">
+                    <navigationItem key="navigationItem" title="SEARCH" id="Tsd-4K-I8u">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon" id="Sqs-tU-mEg">
                             <connections>
                                 <action selector="hamburgerButtonPressed:" destination="DrL-Eg-xUF" id="yZh-Ju-Pqn"/>
@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="1348" y="-366"/>
         </scene>
-        <!--Full Schedule View Controller-->
+        <!--Full Schedule View Controller - FULL SCHEDULE-->
         <scene sceneID="kaR-L9-vCb">
             <objects>
                 <viewController storyboardIdentifier="TVGFullScheduleViewController" id="MYv-u1-y0b" customClass="TVGFullScheduleViewController" sceneMemberID="viewController">
@@ -131,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.22745099663734436" green="0.76078438758850098" blue="0.79607850313186646" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vNr-h7-l7y">
+                    <navigationItem key="navigationItem" title="FULL SCHEDULE" id="vNr-h7-l7y">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon" id="gpS-uQ-AZz">
                             <connections>
                                 <action selector="hamburgerButtonPressed:" destination="MYv-u1-y0b" id="dgX-mT-zVh"/>
@@ -144,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="1040" y="347"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorites View Controller - MY FAVORITES-->
         <scene sceneID="d5k-E7-UJT">
             <objects>
                 <viewController storyboardIdentifier="TVGFavoritesViewController" id="XXU-fW-VcF" customClass="TVGFavoritesViewController" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.9490196704864502" green="0.56862747669219971" blue="0.24705883860588074" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bXR-i5-RTt">
+                    <navigationItem key="navigationItem" title="MY FAVORITES" id="bXR-i5-RTt">
                         <barButtonItem key="leftBarButtonItem" image="menuIcon" id="e9Z-de-Itn">
                             <connections>
                                 <action selector="hamburgerButtonPressed:" destination="XXU-fW-VcF" id="r5o-vd-su2"/>
@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="1581" y="467"/>
         </scene>
-        <!--Show View Controller-->
+        <!--Show View Controller - SHOW-->
         <scene sceneID="Syi-7m-f26">
             <objects>
                 <viewController storyboardIdentifier="TVGShowViewController" id="VGm-CC-yBw" customClass="TVGShowViewController" sceneMemberID="viewController">
@@ -219,7 +219,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rs7-Am-Z0L"/>
+                    <navigationItem key="navigationItem" title="SHOW" id="rs7-Am-Z0L"/>
                     <connections>
                         <outlet property="airingLabel" destination="rg6-5O-YwV" id="pOD-TU-hrt"/>
                         <outlet property="descriptionTextView" destination="YE4-My-tJM" id="O2V-51-4uQ"/>

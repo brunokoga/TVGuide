@@ -7,11 +7,12 @@
 //
 
 #import "TVGAppDelegate.h"
-
+#import "BKThemeManager.h"
 @implementation TVGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[BKThemeManager theme] setupTheme];
     return YES;
 }
 

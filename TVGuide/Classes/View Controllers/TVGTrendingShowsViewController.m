@@ -29,7 +29,8 @@
 {
     [super viewDidLoad];
     [self setUpTableView];
-	// Do any additional setup after loading the view.
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarRed"]
+                                                  forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -49,8 +50,8 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCel
 - (void)setUpTableView
 {
     TableViewCellConfigureBlock configureCell = ^(TVGTrendingShowsTableViewCell *cell, TVGShow *show) {
-        cell.showNameLabel.text = show.name;
-        cell.showProviderLabel.text = show.provider;
+        cell.showNameLabel.text = [show.name uppercaseString];
+        cell.showProviderLabel.text = [show.provider uppercaseString];
         NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
         [cell.showImageView setImageWithURL:imageURL];
         [cell configureForTrending];

@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarGreen"]
+                                                        forBarMetrics:UIBarMetricsDefault];
 	// Do any additional setup after loading the view.
 }
 
@@ -47,7 +49,6 @@
 {
        [TVGSearchServices searchWithSearchTerm:term
                              completionHandler:^(NSArray *array) {
-                                 NSLog(@"%@", array);
                              }];
 }
 @end

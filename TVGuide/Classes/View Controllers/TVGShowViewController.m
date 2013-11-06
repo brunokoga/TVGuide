@@ -25,7 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.titleLabel.text = self.show.name;
+    self.titleLabel.text = [self.show.name uppercaseString];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarRed"]
+                                                     forBarMetrics:UIBarMetricsDefault];
     NSURL *imageURL = [NSURL URLWithString:self.show.imageURLString];
     [self.imageView setImageWithURL:imageURL];
     [self fetchShowFromService];
