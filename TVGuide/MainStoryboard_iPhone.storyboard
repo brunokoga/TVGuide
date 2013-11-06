@@ -321,7 +321,7 @@
         <!--Navigation Controller-->
         <scene sceneID="AhC-yh-tfB">
             <objects>
-                <navigationController storyboardIdentifier="TVGNagivationController" automaticallyAdjustsScrollViewInsets="NO" id="Nsl-RU-F53" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TVGNagivationController" automaticallyAdjustsScrollViewInsets="NO" id="Nsl-RU-F53" customClass="TVGNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zA3-2u-8sc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

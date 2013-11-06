@@ -44,6 +44,7 @@
 		D3BA20871822E15F0079B027 /* TVGFullScheduleServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20861822E15F0079B027 /* TVGFullScheduleServices.m */; };
 		D3BA208A1822E1720079B027 /* TVGSearchServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20891822E1720079B027 /* TVGSearchServices.m */; };
 		D3BA208D1822E2CE0079B027 /* TVGShow+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA208C1822E2CE0079B027 /* TVGShow+Info.m */; };
+		D3D902F5182ACC7F00C85C75 /* TVGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902F4182ACC7F00C85C75 /* TVGNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		D3BA20891822E1720079B027 /* TVGSearchServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSearchServices.m; path = TVGuide/Classes/Services/TVGSearchServices.m; sourceTree = "<group>"; };
 		D3BA208B1822E2CE0079B027 /* TVGShow+Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TVGShow+Info.h"; path = "TVGuide/Classes/Entities/TVGShow+Info.h"; sourceTree = "<group>"; };
 		D3BA208C1822E2CE0079B027 /* TVGShow+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TVGShow+Info.m"; path = "TVGuide/Classes/Entities/TVGShow+Info.m"; sourceTree = "<group>"; };
+		D3D902F3182ACC7F00C85C75 /* TVGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGNavigationController.h; path = "TVGuide/Classes/View Controllers/TVGNavigationController.h"; sourceTree = "<group>"; };
+		D3D902F4182ACC7F00C85C75 /* TVGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGNavigationController.m; path = "TVGuide/Classes/View Controllers/TVGNavigationController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,8 @@
 		D3BA205C1822C0E70079B027 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D3D902F3182ACC7F00C85C75 /* TVGNavigationController.h */,
+				D3D902F4182ACC7F00C85C75 /* TVGNavigationController.m */,
 				D3BA20761822D52D0079B027 /* TVGFavoritesViewController.h */,
 				D3BA20771822D52D0079B027 /* TVGFavoritesViewController.m */,
 				D3BA20721822CE420079B027 /* TVGSideMenuViewController.h */,
@@ -495,6 +500,7 @@
 				D3BA201A1822854E0079B027 /* main.m in Sources */,
 				D3BA20681822C24E0079B027 /* TVGShow+Trending.m in Sources */,
 				D3BA20711822CDA40079B027 /* TVGSideMenuContainerViewController.m in Sources */,
+				D3D902F5182ACC7F00C85C75 /* TVGNavigationController.m in Sources */,
 				D3BA208D1822E2CE0079B027 /* TVGShow+Info.m in Sources */,
 				D3BA206B1822C3520079B027 /* TVGServices.m in Sources */,
 				D3BA20551822BDCA0079B027 /* TVGSearchForShowsViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "TVGBaseViewController.h"
+#import "TVGNavigationController.h"
 #import <MFSideMenu/MFSideMenu.h>
 
 @interface TVGBaseViewController ()
@@ -28,6 +29,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if ([self.navigationController.viewControllers count] > 1)
+    {
+        TVGNavigationController *navigationController = (TVGNavigationController *)self.navigationController;
+        
+        UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menuBackIcon"]
+                                                                           style:UIBarButtonItemStyleBordered
+                                                                          target:navigationController
+                                                                          action:@selector(popViewControllerAnimated)];
+        self.navigationItem.leftBarButtonItem = backButtonItem;
+    }
 }
 
 - (void)didReceiveMemoryWarning
