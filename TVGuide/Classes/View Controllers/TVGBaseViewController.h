@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TVGBaseViewController : UIViewController
-
+@property (strong, nonatomic) UIActivityIndicatorView *activityIndicator;
 @end

@@ -8,6 +8,7 @@
 
 #import "TVGSearchForShowsViewController.h"
 #import "TVGSearchServices.h"
+#import "TVGSearchListViewController.h"
 
 @interface TVGSearchForShowsViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
@@ -42,13 +43,20 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self searchForTerm:textField.text];
+    [textField resignFirstResponder];
     return YES;
 }
 
 - (void)searchForTerm:(NSString *)term
 {
+    [self.activityIndicator startAnimating];
        [TVGSearchServices searchWithSearchTerm:term
                              completionHandler:^(NSArray *array) {
+                                 [self.activityIndicator stopAnimating];
+                                 TVGSearchListViewController *listViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TVGSearchListViewController"];
+                                 listViewController.items = array;
+                                 [self.navigationController pushViewController:listViewController
+                                                                      animated:YES];
                              }];
 }
 @end

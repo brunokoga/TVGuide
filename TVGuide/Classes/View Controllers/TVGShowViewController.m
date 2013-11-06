@@ -36,9 +36,11 @@
 
 - (void)fetchShowFromService
 {
+    [self.activityIndicator startAnimating];
     [TVGShowInfoServices showInfoWithName:self.show.name
                         completionHandler:^(NSArray *array) {
                             // self.datasource.items = array;
+                            [self.activityIndicator stopAnimating];
                             TVGShow *show = [array firstObject];
                             self.show.info = show.info;
                             self.show.listings = show.listings;

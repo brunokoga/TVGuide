@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 MobileAware. All rights reserved.
 //
 
-#import "TVGBaseViewController.h"
+#import "TVGShowListViewController.h"
 
-@interface TVGTrendingShowsViewController : TVGBaseViewController
+@interface TVGTrendingShowsViewController : TVGShowListViewController
 
 @end

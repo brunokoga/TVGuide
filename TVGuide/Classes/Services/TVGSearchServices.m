@@ -7,6 +7,7 @@
 //
 
 #import "TVGSearchServices.h"
+#import "TVGShow+Search.h"
 
 @implementation TVGSearchServices
 
@@ -19,7 +20,13 @@
                       if (error == nil)
                       {
                           NSArray *responseArray = responseObject;
-                          completion(responseArray);
+                          NSMutableArray *results = [NSMutableArray new];
+                          for (NSDictionary *dictionary in responseArray)
+                          {
+                              TVGShow *show = [[TVGShow alloc] initWithSearchDictionary:dictionary];
+                              [results addObject:show];
+                          }
+                          completion([results copy]);
                       }
                       else
                       {

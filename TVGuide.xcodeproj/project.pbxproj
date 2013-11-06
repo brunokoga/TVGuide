@@ -45,6 +45,9 @@
 		D3BA208A1822E1720079B027 /* TVGSearchServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA20891822E1720079B027 /* TVGSearchServices.m */; };
 		D3BA208D1822E2CE0079B027 /* TVGShow+Info.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BA208C1822E2CE0079B027 /* TVGShow+Info.m */; };
 		D3D902F5182ACC7F00C85C75 /* TVGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902F4182ACC7F00C85C75 /* TVGNavigationController.m */; };
+		D3D902F8182AD09000C85C75 /* TVGShow+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902F7182AD09000C85C75 /* TVGShow+Search.m */; };
+		D3D902FB182AD2EB00C85C75 /* TVGShowListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902FA182AD2EB00C85C75 /* TVGShowListViewController.m */; };
+		D3D902FE182AD3CB00C85C75 /* TVGSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902FD182AD3CB00C85C75 /* TVGSearchListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +127,12 @@
 		D3BA208C1822E2CE0079B027 /* TVGShow+Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TVGShow+Info.m"; path = "TVGuide/Classes/Entities/TVGShow+Info.m"; sourceTree = "<group>"; };
 		D3D902F3182ACC7F00C85C75 /* TVGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGNavigationController.h; path = "TVGuide/Classes/View Controllers/TVGNavigationController.h"; sourceTree = "<group>"; };
 		D3D902F4182ACC7F00C85C75 /* TVGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGNavigationController.m; path = "TVGuide/Classes/View Controllers/TVGNavigationController.m"; sourceTree = "<group>"; };
+		D3D902F6182AD09000C85C75 /* TVGShow+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TVGShow+Search.h"; path = "TVGuide/Classes/Entities/TVGShow+Search.h"; sourceTree = "<group>"; };
+		D3D902F7182AD09000C85C75 /* TVGShow+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TVGShow+Search.m"; path = "TVGuide/Classes/Entities/TVGShow+Search.m"; sourceTree = "<group>"; };
+		D3D902F9182AD2EB00C85C75 /* TVGShowListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGShowListViewController.h; path = "TVGuide/Classes/View Controllers/TVGShowListViewController.h"; sourceTree = "<group>"; };
+		D3D902FA182AD2EB00C85C75 /* TVGShowListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGShowListViewController.m; path = "TVGuide/Classes/View Controllers/TVGShowListViewController.m"; sourceTree = "<group>"; };
+		D3D902FC182AD3CB00C85C75 /* TVGSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGSearchListViewController.h; path = "TVGuide/Classes/View Controllers/TVGSearchListViewController.h"; sourceTree = "<group>"; };
+		D3D902FD182AD3CB00C85C75 /* TVGSearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSearchListViewController.m; path = "TVGuide/Classes/View Controllers/TVGSearchListViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +279,10 @@
 				D3BA204E1822BDA30079B027 /* TVGTrendingShowsViewController.m */,
 				D3BA20471822BD790079B027 /* TVGBaseViewController.h */,
 				D3BA20481822BD790079B027 /* TVGBaseViewController.m */,
+				D3D902F9182AD2EB00C85C75 /* TVGShowListViewController.h */,
+				D3D902FA182AD2EB00C85C75 /* TVGShowListViewController.m */,
+				D3D902FC182AD3CB00C85C75 /* TVGSearchListViewController.h */,
+				D3D902FD182AD3CB00C85C75 /* TVGSearchListViewController.m */,
 			);
 			name = "View Controllers";
 			path = ..;
@@ -303,6 +316,8 @@
 				D3BA20671822C24E0079B027 /* TVGShow+Trending.m */,
 				D3BA208B1822E2CE0079B027 /* TVGShow+Info.h */,
 				D3BA208C1822E2CE0079B027 /* TVGShow+Info.m */,
+				D3D902F6182AD09000C85C75 /* TVGShow+Search.h */,
+				D3D902F7182AD09000C85C75 /* TVGShow+Search.m */,
 			);
 			name = Entities;
 			path = ..;
@@ -491,6 +506,7 @@
 				D3BA207C1822D8000079B027 /* BKThemeManager.m in Sources */,
 				D3BA206E1822C7840079B027 /* TVGTrendingShowsTableViewCell.m in Sources */,
 				D3BA20421822ABBE0079B027 /* TVGHTTPRequestOperationManager.m in Sources */,
+				D3D902FE182AD3CB00C85C75 /* TVGSearchListViewController.m in Sources */,
 				D3BA20491822BD790079B027 /* TVGBaseViewController.m in Sources */,
 				D3BA20581822BDE30079B027 /* TVGShowViewController.m in Sources */,
 				D3BA20641822C1550079B027 /* TVGShow.m in Sources */,
@@ -501,6 +517,8 @@
 				D3BA20681822C24E0079B027 /* TVGShow+Trending.m in Sources */,
 				D3BA20711822CDA40079B027 /* TVGSideMenuContainerViewController.m in Sources */,
 				D3D902F5182ACC7F00C85C75 /* TVGNavigationController.m in Sources */,
+				D3D902F8182AD09000C85C75 /* TVGShow+Search.m in Sources */,
+				D3D902FB182AD2EB00C85C75 /* TVGShowListViewController.m in Sources */,
 				D3BA208D1822E2CE0079B027 /* TVGShow+Info.m in Sources */,
 				D3BA206B1822C3520079B027 /* TVGServices.m in Sources */,
 				D3BA20551822BDCA0079B027 /* TVGSearchForShowsViewController.m in Sources */,

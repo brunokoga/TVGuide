@@ -7,20 +7,8 @@
 //
 
 #import "TVGTrendingShowsViewController.h"
-#import "BKTableViewDatasource.h"
 #import "TVGTrendingShowsServices.h"
-#import "TVGTrendingShowsTableViewCell.h"
-#import "TVGShow.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
 #import "TVGShowViewController.h"
-
-@interface TVGTrendingShowsViewController () <UITableViewDelegate>
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong) BKTableViewDatasource *datasource;
-@property (strong, nonatomic) NSIndexPath *selectedIndexPath;
-
-@end
 
 @implementation TVGTrendingShowsViewController
 
@@ -32,18 +20,6 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarRed"]
                                                   forBarMetrics:UIBarMetricsDefault];
 }
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    if (self.selectedIndexPath)
-    {
-        [self.tableView deselectRowAtIndexPath:self.selectedIndexPath
-                                             animated:YES];
-        self.selectedIndexPath = nil;
-    }
-}
-
 
 static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCellIdentifier";
 
@@ -68,27 +44,14 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGTrendingShowsCel
 
 - (void)fetchShowsFromService
 {
+    [self.activityIndicator startAnimating];
     [TVGTrendingShowsServices trendingShowsWithCompletionHandler:^(NSArray *array) {
+        [self.activityIndicator stopAnimating];
         self.datasource.items = array;
         [self.tableView reloadData];
     }];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"ShowInfoSegue"])
-    {
-        TVGShowViewController *destination = segue.destinationViewController;
-        NSLog(@"%@", [(TVGShow *)self.datasource.items[self.selectedIndexPath.row] name]);
-        [destination setShow:(TVGShow *)self.datasource.items[self.selectedIndexPath.row]];
-    }
-}
-
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.selectedIndexPath = indexPath;
-    return indexPath;
-}
 
 
 @end

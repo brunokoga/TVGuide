@@ -11,7 +11,6 @@
 #import <MFSideMenu/MFSideMenu.h>
 
 @interface TVGBaseViewController ()
-
 @end
 
 @implementation TVGBaseViewController
@@ -28,7 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    [self.activityIndicator setHidesWhenStopped:YES];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
 }
 
 - (void)viewWillAppear:(BOOL)animated
