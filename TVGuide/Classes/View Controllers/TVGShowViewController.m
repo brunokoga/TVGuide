@@ -9,6 +9,7 @@
 #import "TVGShowViewController.h"
 #import "TVGShowInfoServices.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import "BKThemeManager.h"
 
 @interface TVGShowViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -25,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setUp];
     self.titleLabel.text = [self.show.name uppercaseString];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarRed"]
                                                      forBarMetrics:UIBarMetricsDefault];
@@ -33,6 +35,16 @@
     [self fetchShowFromService];
 }
 
+- (void)setUp
+{
+    id<TVGTheme> theme = [BKThemeManager theme];
+    self.titleLabel.font = [theme fontWithSize:self.titleLabel.font.pointSize];
+    self.titleLabel.textColor = [theme color1];
+    self.airingLabel.textColor = [theme color2];
+    self.airingLabel.font = [theme fontWithSize:self.airingLabel.font.pointSize];
+    
+    self.descriptionTextView.textColor = [theme color1];
+}
 
 - (void)fetchShowFromService
 {

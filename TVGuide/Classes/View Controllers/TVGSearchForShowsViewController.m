@@ -29,9 +29,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarGreen"]
-                                                        forBarMetrics:UIBarMetricsDefault];
 	// Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarGreen"]
+                                                  forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)didReceiveMemoryWarning
