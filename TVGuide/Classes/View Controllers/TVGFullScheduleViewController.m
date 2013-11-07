@@ -7,34 +7,54 @@
 //
 
 #import "TVGFullScheduleViewController.h"
+#import "BKMultipleSectionsTableViewDataSource.h"
+#import "TVGFullScheduleServices.h"
 
 @interface TVGFullScheduleViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation TVGFullScheduleViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-       [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarBlue"]
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBarBlue"]
                                                      forBarMetrics:UIBarMetricsDefault];
-	// Do any additional setup after loading the view.
+    [self setUpTableView];
 }
 
-- (void)didReceiveMemoryWarning
+static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCellIdentifier";
+
+- (void)setUpTableView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    TableViewCellConfigureBlock configureCell = ^(TVGTrendingShowsTableViewCell *cell, TVGShow *show) {
+        cell.showNameLabel.text = [show.name uppercaseString];
+        cell.showProviderLabel.text = [show.provider uppercaseString];
+        NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
+        [cell.showImageView setImageWithURL:imageURL];
+        [cell configureForTrending];
+    };
+
+    self.datasource = [[BKMultipleSectionsTableViewDataSource alloc] initWithCellIdentifier:kTVGTrendingShowsCellIdentifier
+                                                                         configureCellBlock:configureCell];
+    
+    self.tableView.dataSource = self.datasource;
+    self.tableView.delegate = self;
+    
+    [self fetchScheduleFromService];
 }
 
+- (void)fetchScheduleFromService
+{
+    [self.activityIndicator startAnimating];
+    NSString *countryInitials = @"US"; //TODO: change this ugly hardcoded thing
+    [TVGFullScheduleServices fullScheduleForCountryInitials:countryInitials
+                                          completionHandler:^(NSArray *array) {
+                                              [self.activityIndicator stopAnimating];
+                                              self.datasource.items = array;
+                                              [self.tableView reloadData];
+    }];
+}
 @end

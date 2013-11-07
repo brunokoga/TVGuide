@@ -48,6 +48,8 @@
 		D3D902F8182AD09000C85C75 /* TVGShow+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902F7182AD09000C85C75 /* TVGShow+Search.m */; };
 		D3D902FB182AD2EB00C85C75 /* TVGShowListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902FA182AD2EB00C85C75 /* TVGShowListViewController.m */; };
 		D3D902FE182AD3CB00C85C75 /* TVGSearchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D902FD182AD3CB00C85C75 /* TVGSearchListViewController.m */; };
+		D3D90301182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D90300182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.m */; };
+		D3D90304182BB59600C85C75 /* TVGFullScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D90303182BB59600C85C75 /* TVGFullScheduleTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,10 @@
 		D3D902FA182AD2EB00C85C75 /* TVGShowListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGShowListViewController.m; path = "TVGuide/Classes/View Controllers/TVGShowListViewController.m"; sourceTree = "<group>"; };
 		D3D902FC182AD3CB00C85C75 /* TVGSearchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGSearchListViewController.h; path = "TVGuide/Classes/View Controllers/TVGSearchListViewController.h"; sourceTree = "<group>"; };
 		D3D902FD182AD3CB00C85C75 /* TVGSearchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGSearchListViewController.m; path = "TVGuide/Classes/View Controllers/TVGSearchListViewController.m"; sourceTree = "<group>"; };
+		D3D902FF182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKMultipleSectionsTableViewDataSource.h; path = TVGuide/Classes/BKMultipleSectionsTableViewDataSource.h; sourceTree = "<group>"; };
+		D3D90300182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKMultipleSectionsTableViewDataSource.m; path = TVGuide/Classes/BKMultipleSectionsTableViewDataSource.m; sourceTree = "<group>"; };
+		D3D90302182BB59500C85C75 /* TVGFullScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGFullScheduleTableViewCell.h; path = "TVGuide/Classes/Table View Cells/TVGFullScheduleTableViewCell.h"; sourceTree = "<group>"; };
+		D3D90303182BB59600C85C75 /* TVGFullScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGFullScheduleTableViewCell.m; path = "TVGuide/Classes/Table View Cells/TVGFullScheduleTableViewCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +299,8 @@
 			children = (
 				D3BA20591822BFB40079B027 /* BKTableViewDatasource.h */,
 				D3BA205A1822BFB40079B027 /* BKTableViewDatasource.m */,
+				D3D902FF182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.h */,
+				D3D90300182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.m */,
 			);
 			name = Helpers;
 			path = ..;
@@ -328,6 +336,8 @@
 			children = (
 				D3BA206C1822C7840079B027 /* TVGTrendingShowsTableViewCell.h */,
 				D3BA206D1822C7840079B027 /* TVGTrendingShowsTableViewCell.m */,
+				D3D90302182BB59500C85C75 /* TVGFullScheduleTableViewCell.h */,
+				D3D90303182BB59600C85C75 /* TVGFullScheduleTableViewCell.m */,
 			);
 			name = "Table View Cells";
 			path = ..;
@@ -499,6 +509,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3BA20801822D82C0079B027 /* TVGBasicTheme.m in Sources */,
+				D3D90301182BB3BB00C85C75 /* BKMultipleSectionsTableViewDataSource.m in Sources */,
+				D3D90304182BB59600C85C75 /* TVGFullScheduleTableViewCell.m in Sources */,
 				D3BA20871822E15F0079B027 /* TVGFullScheduleServices.m in Sources */,
 				D3BA20741822CE420079B027 /* TVGSideMenuViewController.m in Sources */,
 				D3BA20841822E1430079B027 /* TVGShowInfoServices.m in Sources */,

@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *showListingLabel;
 
 @end
 
@@ -43,7 +44,8 @@
     self.airingLabel.textColor = [theme color2];
     self.airingLabel.font = [theme fontWithSize:self.airingLabel.font.pointSize];
     
-    self.descriptionTextView.textColor = [theme color1];
+    self.showListingLabel.textColor = [theme color1];
+    self.showListingLabel.font = [theme fontWithSize:self.showListingLabel.font.pointSize];
 }
 
 - (void)fetchShowFromService
@@ -65,8 +67,6 @@
 - (void)refreshScreen
 {
     self.descriptionTextView.text = self.show.info;
-    
-    
 }
 
 @end

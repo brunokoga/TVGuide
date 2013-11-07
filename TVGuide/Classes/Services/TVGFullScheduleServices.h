@@ -10,4 +10,7 @@
 
 @interface TVGFullScheduleServices : TVGServices
 
++ (void)fullScheduleForCountryInitials:(NSString *)countryInitials
+                     completionHandler:(TVGServiceArrayResponse)completion;
+
 @end
