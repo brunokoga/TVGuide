@@ -7,7 +7,6 @@
         <!--Trending Shows View Controller - TRENDING SHOWS-->
         <scene sceneID="iLU-J2-2AU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PrM-yK-md4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TVGTrendingShowsViewController" id="URo-Kv-8Sx" customClass="TVGTrendingShowsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OlS-rd-UVb"/>
@@ -75,6 +74,7 @@
                         <outlet property="tableView" destination="Bqx-dC-f0b" id="sp6-ow-aZz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrM-yK-md4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="514" y="168"/>
         </scene>
@@ -402,7 +402,6 @@
         <!--Search List View Controller - TRENDING SHOWS-->
         <scene sceneID="oDV-30-PLp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QN2-iu-R87" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TVGSearchListViewController" id="Fct-EN-ceR" customClass="TVGSearchListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PCs-a8-ZbZ"/>
@@ -470,6 +469,7 @@
                         <outlet property="tableView" destination="dqm-NS-2Bg" id="usw-LL-oXZ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QN2-iu-R87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1918" y="-328"/>
         </scene>

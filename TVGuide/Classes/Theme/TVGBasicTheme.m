@@ -28,22 +28,38 @@ static NSString * const kBasicThemeFontName = @"PunkRockShow";
 
 - (UIColor *)color1
 {
-    return [UIColor redColor];
+   UIColor *color = [UIColor colorWithRed:240.0/255.0
+                                    green:69.0/255.0
+                                     blue:70.0/255.0
+                                    alpha:1.0];
+    return color;
 }
 
 - (UIColor *)color2
 {
-    return [UIColor blueColor];
+   UIColor *color = [UIColor colorWithRed:66.0/255.0
+                                    green:173.0/255.0
+                                     blue:240.0/255.0
+                                    alpha:1.0];
+    return color;
 }
 
 - (UIColor *)color3
 {
-    return [UIColor greenColor];
+   UIColor *color = [UIColor colorWithRed:125.0/255.0
+                                    green:195.0/255.0
+                                     blue:53.0/255.0
+                                    alpha:1.0];
+    return color;
 }
 
 - (UIColor *)color4
 {
-    return [UIColor orangeColor];
+   UIColor *color = [UIColor colorWithRed:244.0/255.0
+                                    green:145.0/255.0
+                                     blue:50.0/255.0
+                                    alpha:1.0];
+    return color;
 }
 
 - (UIColor *)color5

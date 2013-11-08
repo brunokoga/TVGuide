@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
     [self setUpTableView];
+    self.title = NSLocalizedString(@"SEARCH RESULTS",@"");
 }
 
 static NSString * const kTVGSearchCellIdentifier = @"kTVGSearchCellIdentifier";
