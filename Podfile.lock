@@ -20,14 +20,17 @@ PODS:
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
   - MFSideMenu (0.5.4)
+  - SWTableViewCell (0.1.1)
 
 DEPENDENCIES:
-  - AFNetworking
-  - AFNetworking/UIKit
-  - MFSideMenu
+  - AFNetworking (~> 2.0.2)
+  - AFNetworking/UIKit (~> 2.0.2)
+  - MFSideMenu (~> 0.5.4)
+  - SWTableViewCell (~> 0.1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
   MFSideMenu: f59e25c080097a701e108459c207fb22e1f62c30
+  SWTableViewCell: 5e267ee70ab92cd80e447c511ee1c7e661646e06
 
 COCOAPODS: 0.27.1

@@ -1,4 +1,5 @@
-platform :ios, "6.0"
-pod 'AFNetworking'
-pod 'AFNetworking/UIKit'
-pod 'MFSideMenu'
+platform :ios, "7.0"
+pod 'AFNetworking', '~> 2.0.2'
+pod 'AFNetworking/UIKit', '~> 2.0.2'
+pod 'MFSideMenu', '~> 0.5.4'
+pod 'SWTableViewCell', '~> 0.1.1'
