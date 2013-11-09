@@ -11,8 +11,9 @@
 #import "TVGFullScheduleServices.h"
 #import "TVGFullScheduleTableViewCell.h"
 #import "TVGScheduleShow.h"
+#import "BKThemeManager.h"
 
-@interface TVGFullScheduleViewController ()
+@interface TVGFullScheduleViewController () <HHPanningTableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -38,9 +39,8 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
         //removing the AM/PM
         cell.timeLabel.text = [show.timeString substringToIndex:[show.timeString length] -3];
         cell.amPmLabel.text = [show.timeString substringFromIndex:[show.timeString length] -2];
-//        NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
-//        [cell.showImageView setImageWithURL:imageURL];
-//        [cell configureForTrending];
+        
+        cell.delegate = self;
     };
 
     self.datasource = [[BKMultipleSectionsTableViewDataSource alloc] initWithCellIdentifier:kTVGTrendingShowsCellIdentifier
@@ -62,5 +62,16 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
                                               self.datasource.items = array;
                                               [self.tableView reloadData];
     }];
+}
+
+
+- (BOOL)panningTableViewCell:(HHPanningTableViewCell *)cell shouldReceivePanningTouch:(UITouch*)touch
+{
+    return YES;
+}
+
+- (void)panningTableViewCell:(HHPanningTableViewCell *)cell didTriggerWithDirection:(HHPanningTableViewCellDirection)direction
+{
+    
 }
 @end

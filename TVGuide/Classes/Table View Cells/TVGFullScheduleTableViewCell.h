@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <HHPanningTableViewCell/HHPanningTableViewCell.h>
 
-@interface TVGFullScheduleTableViewCell : UITableViewCell
+@interface TVGFullScheduleTableViewCell : HHPanningTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *amPmLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *showNameLabel;

@@ -19,18 +19,18 @@ PODS:
   - AFNetworking/Serialization (2.0.2)
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
+  - HHPanningTableViewCell (2.0.0)
   - MFSideMenu (0.5.4)
-  - SWTableViewCell (0.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.2)
   - AFNetworking/UIKit (~> 2.0.2)
+  - HHPanningTableViewCell
   - MFSideMenu (~> 0.5.4)
-  - SWTableViewCell (~> 0.1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
+  HHPanningTableViewCell: 16b23eb06b99121c7fd678b6f54700338317b008
   MFSideMenu: f59e25c080097a701e108459c207fb22e1f62c30
-  SWTableViewCell: 5e267ee70ab92cd80e447c511ee1c7e661646e06
 
 COCOAPODS: 0.27.1
