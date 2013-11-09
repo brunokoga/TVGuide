@@ -33,14 +33,6 @@
     self.showProviderLabel.font = [theme fontWithSize:self.showProviderLabel.font.pointSize];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
-
 - (void)configureForTrending
 {
     id<TVGTheme> theme = [BKThemeManager theme];
