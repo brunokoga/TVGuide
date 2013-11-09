@@ -10,6 +10,7 @@
 #import "BKMultipleSectionsTableViewDataSource.h"
 #import "TVGFullScheduleServices.h"
 #import "TVGFullScheduleTableViewCell.h"
+#import "TVGScheduleShow.h"
 
 @interface TVGFullScheduleViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -30,9 +31,13 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
 
 - (void)setUpTableView
 {
-    TableViewCellConfigureBlock configureCell = ^(TVGFullScheduleTableViewCell *cell, TVGShow *show) {
+    TableViewCellConfigureBlock configureCell = ^(TVGFullScheduleTableViewCell *cell, TVGScheduleShow *show) {
         cell.showNameLabel.text = [show.name uppercaseString];
         cell.channelLabel.text = [show.provider uppercaseString];
+        
+        //removing the AM/PM
+        cell.timeLabel.text = [show.timeString substringToIndex:[show.timeString length] -3];
+        cell.amPmLabel.text = [show.timeString substringFromIndex:[show.timeString length] -2];
 //        NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
 //        [cell.showImageView setImageWithURL:imageURL];
 //        [cell configureForTrending];

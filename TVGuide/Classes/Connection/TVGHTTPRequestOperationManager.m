@@ -45,7 +45,7 @@ static NSString * const kCONFIGURATION_KEY = @"Configuration";
 
 - (void)configureSerializers
 {
-    self.responseSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[AFJSONResponseSerializer new], [AFXMLParserResponseSerializer new]]];
+    self.responseSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[AFJSONResponseSerializer new], [AFXMLParserResponseSerializer new], [AFImageResponseSerializer new]]];
 }
 
 
