@@ -9,6 +9,7 @@
 #import "TVGFullScheduleViewController.h"
 #import "BKMultipleSectionsTableViewDataSource.h"
 #import "TVGFullScheduleServices.h"
+#import "TVGFullScheduleTableViewCell.h"
 
 @interface TVGFullScheduleViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,12 +30,12 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
 
 - (void)setUpTableView
 {
-    TableViewCellConfigureBlock configureCell = ^(TVGTrendingShowsTableViewCell *cell, TVGShow *show) {
+    TableViewCellConfigureBlock configureCell = ^(TVGFullScheduleTableViewCell *cell, TVGShow *show) {
         cell.showNameLabel.text = [show.name uppercaseString];
-        cell.showProviderLabel.text = [show.provider uppercaseString];
-        NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
-        [cell.showImageView setImageWithURL:imageURL];
-        [cell configureForTrending];
+        cell.channelLabel.text = [show.provider uppercaseString];
+//        NSURL *imageURL = [NSURL URLWithString:show.imageURLString];
+//        [cell.showImageView setImageWithURL:imageURL];
+//        [cell configureForTrending];
     };
 
     self.datasource = [[BKMultipleSectionsTableViewDataSource alloc] initWithCellIdentifier:kTVGTrendingShowsCellIdentifier

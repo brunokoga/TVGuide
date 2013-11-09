@@ -8,6 +8,7 @@
 
 #import "TVGHTTPRequestOperationManager.h"
 #import <AFNetworkActivityIndicatorManager.h>
+#import <AFNetworking/AFURLResponseSerialization.h>
 
 @interface TVGHTTPRequestOperationManager()
 @property (strong) NSDictionary *urls;
@@ -24,6 +25,7 @@
         sharedInstance = [[self alloc] initWithBaseURL:nil];
         [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
         [sharedInstance instantiateURLs];
+        [sharedInstance configureSerializers];
     });
     return sharedInstance;
 }
@@ -39,6 +41,11 @@ static NSString * const kCONFIGURATION_KEY = @"Configuration";
     NSString *configuration = [[NSBundle mainBundle] objectForInfoDictionaryKey:kCONFIGURATION_KEY];
     NSDictionary *dictForConfiguration = dictionary[configuration];
     self.urls = dictForConfiguration;
+}
+
+- (void)configureSerializers
+{
+    self.responseSerializer = [AFCompoundResponseSerializer compoundSerializerWithResponseSerializers:@[[AFJSONResponseSerializer new], [AFXMLParserResponseSerializer new]]];
 }
 
 

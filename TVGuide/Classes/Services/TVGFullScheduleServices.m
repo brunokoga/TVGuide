@@ -7,6 +7,7 @@
 //
 
 #import "TVGFullScheduleServices.h"
+#import "TVGScheduleXMLParser.h"
 
 @implementation TVGFullScheduleServices
 
@@ -18,6 +19,9 @@
                                  completion:^(NSError *error, id responseObject) {
                                      if (error == nil)
                                      {
+                                         NSArray *responseArray = [[TVGScheduleXMLParser new] showsFromXMLParser:responseObject];
+                                         
+                                         completion(responseArray);
                                      }
                                      else
                                      {
