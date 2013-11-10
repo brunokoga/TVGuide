@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <HHPanningTableViewCell/HHPanningTableViewCell.h>
+#import "HHPanningTableViewCell_Private.h"
 
 @interface TVGFullScheduleTableViewCell : HHPanningTableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *amPmLabel;

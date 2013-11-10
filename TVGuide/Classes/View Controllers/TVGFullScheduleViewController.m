@@ -40,7 +40,7 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
         cell.timeLabel.text = [show.timeString substringToIndex:[show.timeString length] -3];
         cell.amPmLabel.text = [show.timeString substringFromIndex:[show.timeString length] -2];
         
-        cell.delegate = self;
+        //        cell.delegate = self;
     };
 
     self.datasource = [[BKMultipleSectionsTableViewDataSource alloc] initWithCellIdentifier:kTVGTrendingShowsCellIdentifier

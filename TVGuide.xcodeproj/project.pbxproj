@@ -68,6 +68,7 @@
 /* Begin PBXFileReference section */
 		08EBF8321AAF4D06ABAC3475 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B2CD25ECC6490FA6292C05 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D311E3F6182F0E2500597109 /* HHPanningTableViewCell_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHPanningTableViewCell_Private.h; path = TVGuide/Classes/HHPanningTableViewCell_Private.h; sourceTree = "<group>"; };
 		D34503DC182ED66D0092F762 /* TVGScheduleShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGScheduleShow.h; path = TVGuide/Classes/Entities/TVGScheduleShow.h; sourceTree = "<group>"; };
 		D34503DD182ED66D0092F762 /* TVGScheduleShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGScheduleShow.m; path = TVGuide/Classes/Entities/TVGScheduleShow.m; sourceTree = "<group>"; };
 		D34503DF182EDA9A0092F762 /* TVGXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGXMLParser.h; path = Classes/Parsers/TVGXMLParser.h; sourceTree = "<group>"; };
@@ -357,6 +358,7 @@
 		D3BA20751822D1080079B027 /* Table View Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D311E3F6182F0E2500597109 /* HHPanningTableViewCell_Private.h */,
 				D3BA206C1822C7840079B027 /* TVGTrendingShowsTableViewCell.h */,
 				D3BA206D1822C7840079B027 /* TVGTrendingShowsTableViewCell.m */,
 				D3D90302182BB59500C85C75 /* TVGFullScheduleTableViewCell.h */,
