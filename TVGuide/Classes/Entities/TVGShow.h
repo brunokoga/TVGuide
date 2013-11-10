@@ -10,14 +10,15 @@
 
 @interface TVGShow : NSObject
 
-@property (strong) NSString *imageURLString;
-@property (strong) NSString *linkString;
-@property (strong) NSString *name;
-@property (strong) NSNumber *position;
-@property (strong) NSString *provider;
+@property (strong, nonatomic) NSString *imageURLString;
+@property (strong, nonatomic) NSString *linkString;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSNumber *position;
+@property (strong, nonatomic) NSString *provider;
 
-@property (strong) NSString *info;
-@property (strong) NSArray *crew;
-@property (strong) NSArray *listings;
+@property (strong, nonatomic) NSString *info;
+@property (strong, nonatomic) NSArray *crew;
+@property (strong, nonatomic) NSArray *listings;
+@property (strong, nonatomic) NSString *air;
 
 @end

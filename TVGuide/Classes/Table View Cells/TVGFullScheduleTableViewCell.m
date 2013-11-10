@@ -61,7 +61,6 @@
     self.maximumPan = 120.0;
     self.directionMask = UISwipeGestureRecognizerDirectionLeft;
 }
-
 #pragma mark - Superclass overriding
 
 /*
@@ -182,4 +181,5 @@
 		}
 	}
 }
+
 @end

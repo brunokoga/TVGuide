@@ -75,6 +75,7 @@
 		D34503E0182EDA9A0092F762 /* TVGXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGXMLParser.m; path = Classes/Parsers/TVGXMLParser.m; sourceTree = "<group>"; };
 		D34503E3182EDADF0092F762 /* TVGScheduleXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TVGScheduleXMLParser.h; path = Classes/Parsers/TVGScheduleXMLParser.h; sourceTree = "<group>"; };
 		D34503E4182EDADF0092F762 /* TVGScheduleXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TVGScheduleXMLParser.m; path = Classes/Parsers/TVGScheduleXMLParser.m; sourceTree = "<group>"; };
+		D3749203182FFFCC0054FE67 /* NSNull+SafeString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNull+SafeString.h"; path = "Classes/NSNull+SafeString.h"; sourceTree = "<group>"; };
 		D3BA200A1822854E0079B027 /* TVGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BA200D1822854E0079B027 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3BA200F1822854E0079B027 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -232,6 +233,7 @@
 				D3BA20141822854E0079B027 /* Supporting Files */,
 				D3BA205E1822C1000079B027 /* Network */,
 				D34503E2182EDA9F0092F762 /* Parsers */,
+				D3749203182FFFCC0054FE67 /* NSNull+SafeString.h */,
 			);
 			path = TVGuide;
 			sourceTree = "<group>";

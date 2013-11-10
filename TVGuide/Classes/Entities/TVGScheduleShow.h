@@ -14,6 +14,6 @@
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *episode;
 @property (strong, nonatomic) NSString *day;
-
+@property (strong, nonatomic) NSString *amPm;
 
 @end

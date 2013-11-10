@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TVGHTTPRequestOperationManager.h"
+#import <ARSafeJSON/ARSafeJSON.h>
 
 /**
  *  Abstract Class that declares

@@ -28,7 +28,7 @@
     [self setUpTableView];
 }
 
-static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCellIdentifier";
+static NSString * const kTVGFullScheduleCellIdentifier = @"kTVGFullScheduleCellIdentifier";
 
 - (void)setUpTableView
 {
@@ -43,7 +43,7 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
         //        cell.delegate = self;
     };
 
-    self.datasource = [[BKMultipleSectionsTableViewDataSource alloc] initWithCellIdentifier:kTVGTrendingShowsCellIdentifier
+    self.datasource = [[BKMultipleSectionsTableViewDataSource alloc] initWithCellIdentifier:kTVGFullScheduleCellIdentifier
                                                                          configureCellBlock:configureCell];
     
     self.tableView.dataSource = self.datasource;

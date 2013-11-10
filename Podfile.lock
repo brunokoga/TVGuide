@@ -19,17 +19,20 @@ PODS:
   - AFNetworking/Serialization (2.0.2)
   - AFNetworking/UIKit (2.0.2):
     - AFNetworking/NSURLConnection
+  - ARSafeJSON (0.0.7)
   - HHPanningTableViewCell (2.0.0)
   - MFSideMenu (0.5.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.2)
   - AFNetworking/UIKit (~> 2.0.2)
+  - ARSafeJSON
   - HHPanningTableViewCell
   - MFSideMenu (~> 0.5.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
+  ARSafeJSON: 737d05b66a51376fcc7c548569c457a77a70bd2c
   HHPanningTableViewCell: 16b23eb06b99121c7fd678b6f54700338317b008
   MFSideMenu: f59e25c080097a701e108459c207fb22e1f62c30
 

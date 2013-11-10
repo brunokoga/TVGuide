@@ -19,7 +19,7 @@
                   completion:^(NSError *error, id responseObject) {
                       if (error == nil)
                       {
-                          NSArray *responseArray = responseObject;
+                          NSArray *responseArray = [[ARSafeJSON new] cleanUpJson:responseObject];
                           NSMutableArray *results = [NSMutableArray new];
                           for (NSDictionary *dictionary in responseArray)
                           {

@@ -19,7 +19,7 @@
                   completion:^(NSError *error, id responseObject) {
                       if (error == nil)
                       {
-                          NSDictionary *responseDictionary = responseObject;
+                          NSDictionary *responseDictionary = [[ARSafeJSON new] cleanUpJson:responseObject];
                           TVGShow *show = [[TVGShow alloc] initWithShowInfoDictionary:responseDictionary];
                           completion(@[show]);
                       }

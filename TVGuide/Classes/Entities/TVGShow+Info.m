@@ -17,7 +17,8 @@
         self.info = dictionary[@"info"];
         self.listings = dictionary[@"listings"];
         self.crew = dictionary[@"crew"];
-        
+        self.imageURLString = dictionary[@"img"];
+        self.air = dictionary[@"air"];
     }
     return self;
     

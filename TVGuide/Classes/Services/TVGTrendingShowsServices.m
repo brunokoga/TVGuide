@@ -18,7 +18,7 @@
         if (error == nil)
         {
             NSMutableArray *shows = [NSMutableArray new];
-            NSArray *responseArray = responseObject;
+            NSArray *responseArray = [[ARSafeJSON new] cleanUpJson:responseObject];
             for (NSDictionary *dictionary in responseArray)
             {
                 TVGShow *show = [[TVGShow alloc] initWithTrendingDictionary:dictionary];
