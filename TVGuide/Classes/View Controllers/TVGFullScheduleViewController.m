@@ -13,7 +13,7 @@
 #import "TVGScheduleShow.h"
 #import "BKThemeManager.h"
 
-@interface TVGFullScheduleViewController () <HHPanningTableViewCellDelegate>
+@interface TVGFullScheduleViewController () <HHPanningTableViewCellDelegate, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -63,7 +63,22 @@ static NSString * const kTVGTrendingShowsCellIdentifier = @"kTVGFullScheduleCell
                                               [self.tableView reloadData];
     }];
 }
+#pragma mark - UITableViewDelegate
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    id<TVGTheme> theme = [BKThemeManager theme];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 230, 22)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 300, 22)];
+    view.backgroundColor = [theme color2];
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor whiteColor];
+    [view addSubview:label];
+    TVGScheduleShow *show = self.datasource.items[section][0];
+    label.text = show.day;
+    return view;
+}
 
 - (BOOL)panningTableViewCell:(HHPanningTableViewCell *)cell shouldReceivePanningTouch:(UITouch*)touch
 {
